@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <title>National Parks Search</title>
+</head>
+<body>
+    <div class="container">
+        <header role="banner">
+            <h1>National Park Search</h1>
+        </header>
+        <section role="region">
+            <form id="js-form">
+                <label>Select Area to Search</label><br><br>
+                <p>You may enter one state or multiple.  Separate the states with a comma, please.</p>
+                <input type="text" name="search-term" id="js-search-term" required placeholder="MD"><br><br>
+                <p>Enter the number of results you would like returned.  If nothing is entered, 10 will be returned.</p>
+                <input type="text" name="max-results" id="js-max-results" required value="10"><br>
+                <input type="submit" value="Go!">
+            </form>
+        </section>
+        <section role="region">
+            <p id="js-error-message"></p>
+        </section>
+        <section role="region" id="js-results" class="hidden">
+            <h2>Here are the results of the Nat Park Search</h2>
+            <ul id="js-results-list">
+            </ul>
+        </section>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>

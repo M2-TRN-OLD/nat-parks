@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    margin-top:20px;
+}
+
+#container {
+    width:600px;
+    margin:auto;
+    margin-top:20px;
+}
+
+ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+li {
+    padding:10px;
+    max-width:500px;
+}
+
+.hidden {
+    display:none;
+}
+
+.js-error-message {
+    color:red;
+}
